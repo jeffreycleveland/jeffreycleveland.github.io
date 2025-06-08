@@ -1,3 +1,57 @@
+/* Global site styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Color palette from chart styling */
+    --color-text: #425464;
+    --color-background: #e2ecf1;
+    --color-primary: #0b3b61;
+    --color-secondary: #00b6b2;
+    --color-tertiary: #009b87;
+    --color-fourth: #00657f;
+    --color-fifth: #d29f2a;
+    --color-callout: #e0195b;
+
+    /* Typography */
+    --font-title: 'CabritoContrast-ExtraBlack', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-subtitle: 'CabritoContrast-ConExtraBoldItalic', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-heading: 'CabritoContrast-ExtraExtraBold', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-body: 'CabritoContrast-ExtraRegular', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 36px;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-family: var(--font-subtitle);
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-tertiary);
+}
+
 /* Chart styles */
 .chart-list {
     list-style: none;
