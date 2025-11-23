@@ -1,6 +1,47 @@
 /* Global site styles */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* Custom font definitions */
+@font-face {
+    font-family: 'CabritoContrast';
+    src: url('/assets/fonts/CabritoContrast-ExtReg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CabritoContrast';
+    src: url('/assets/fonts/CabritoContrast-ExtBol.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CabritoContrast';
+    src: url('/assets/fonts/CabritoContrast-ExtExB.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CabritoContrast';
+    src: url('/assets/fonts/CabritoContrast-ExtBla.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CabritoContrastCon';
+    src: url('/assets/fonts/CabritoContrast-ConExBIt.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
     /* Color palette from chart styling */
     --color-text: #425464;
@@ -13,10 +54,10 @@
     --color-callout: #e0195b;
 
     /* Typography */
-    --font-title: 'CabritoContrast-ExtraBlack', 'Open Sans', Helvetica, Arial, sans-serif;
-    --font-subtitle: 'CabritoContrast-ConExtraBoldItalic', 'Open Sans', Helvetica, Arial, sans-serif;
-    --font-heading: 'CabritoContrast-ExtraExtraBold', 'Open Sans', Helvetica, Arial, sans-serif;
-    --font-body: 'CabritoContrast-ExtraRegular', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-title: 'CabritoContrast', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-subtitle: 'CabritoContrastCon', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-heading: 'CabritoContrast', 'Open Sans', Helvetica, Arial, sans-serif;
+    --font-body: 'CabritoContrast', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -29,18 +70,22 @@ body {
 
 h1 {
     font-family: var(--font-title);
+    font-weight: 900;
     font-size: 36px;
     color: var(--color-primary);
 }
 
 h2 {
     font-family: var(--font-subtitle);
+    font-weight: 800;
+    font-style: italic;
     font-size: 24px;
     color: var(--color-primary);
 }
 
 h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    font-weight: 800;
     color: var(--color-primary);
 }
 
