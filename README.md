@@ -11,6 +11,7 @@ Visit: [jeffreycleveland.github.io](https://jeffreycleveland.github.io)
 - `index.html` - Home page
 - `charts.html` - Economic charts collection
 - `css/main.css` - Main stylesheet
+- `fonts/` - Custom font files for the website
 - `PDFcharts/` - High-resolution PDF versions of economic data visualizations
 
 ## Development
