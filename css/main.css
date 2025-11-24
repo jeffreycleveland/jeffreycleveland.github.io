@@ -92,7 +92,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 12px 20px;
 }
 
 nav li {
@@ -102,8 +103,9 @@ nav li {
 nav a {
     color: var(--color-text-muted);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     transition: color 0.2s ease;
+    white-space: nowrap;
 }
 
 nav a:hover {
