@@ -80,11 +80,33 @@ body {
     padding: 0 20px;
 }
 
+/* Site header */
+.site-header {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 60px 20px 0;
+    text-align: center;
+}
+
+.site-header a {
+    font-family: var(--font-title);
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.site-header a:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
     max-width: 750px;
     margin: 0 auto;
-    padding: 40px 20px 20px;
+    padding: 20px 20px 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -93,6 +115,7 @@ nav ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px 16px;
 }
 
