@@ -271,3 +271,62 @@ footer a:hover {
 .chart-list a:hover {
     text-decoration: underline;
 }
+
+/* Newsletter signup form */
+.newsletter-form {
+    margin-top: 32px;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+.newsletter-form input[type="email"] {
+    font-family: var(--font-body);
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 12px;
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
+
+.newsletter-form input[type="submit"] {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 24px;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: var(--color-tertiary);
+}
+
+.newsletter-form .powered-by {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.newsletter-form .powered-by a {
+    color: var(--color-text-muted);
+}
+
+.newsletter-form .powered-by a:hover {
+    color: var(--color-text);
+}
