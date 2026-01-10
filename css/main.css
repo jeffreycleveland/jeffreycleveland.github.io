@@ -330,3 +330,108 @@ footer a:hover {
 .newsletter-form .powered-by a:hover {
     color: var(--color-text);
 }
+
+/* Essay list styles (reuse chart-list pattern) */
+.essay-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.essay-list li {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.essay-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.essay-list h3 {
+    margin-bottom: 4px;
+}
+
+.essay-list h3 a {
+    color: var(--color-primary);
+}
+
+.essay-list h3 a:hover {
+    color: var(--color-secondary);
+}
+
+.essay-list .date {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.essay-list p {
+    margin: 0 0 12px 0;
+}
+
+.essay-list p:last-child {
+    margin-bottom: 0;
+}
+
+/* Essay page styles */
+.essay {
+    padding: 40px 0 60px;
+}
+
+.essay-header {
+    margin-bottom: 32px;
+}
+
+.essay-header h1 {
+    margin-bottom: 8px;
+}
+
+.essay-header .date {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    margin: 0;
+}
+
+.essay-content p {
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.essay-content h2 {
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+/* Inline figures/charts in essays */
+.essay-figure {
+    margin: 32px 0;
+    text-align: center;
+}
+
+.essay-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.essay-figure figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* Back to essays link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.back-link:hover {
+    color: var(--color-text);
+}
