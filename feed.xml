@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeffrey Cleveland - Economic Charts</title>
+    <link>https://jeffreycleveland.com/charts</link>
+    <description>High-resolution economic charts and data visualizations by Jeffrey Cleveland</description>
+    <language>en-us</language>
+    <atom:link href="https://jeffreycleveland.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Private Payrolls: How Rare Is "Weak" Right Now?</title>
+      <link>https://jeffreycleveland.com/PDFcharts/priv_payrolls_how_weak.pdf</link>
+      <description>An exploration of the current 3-month moving average of monthly private job growth in the historical context.</description>
+      <pubDate>Fri, 10 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/priv_payrolls_how_weak.pdf</guid>
+    </item>
+
+    <item>
+      <title>Curb Your Enthusiasm: 2025 Was The Weakest Non-Recession Job Growth Year Since 2002</title>
+      <link>https://jeffreycleveland.com/PDFcharts/annual_payroll_growth.pdf</link>
+      <description>Putting annual job growth in perspective compared to non-recession years since 1940.</description>
+      <pubDate>Thu, 09 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/annual_payroll_growth.pdf</guid>
+    </item>
+
+    <item>
+      <title>Housing Inflation's Three Acts: From GFC Dump, To Covid Jump, To 2026 Slump?</title>
+      <link>https://jeffreycleveland.com/PDFcharts/housing_PCE_3_acts.pdf</link>
+      <description>A look at the housing component of core PCE inflation through three acts in the last 20 years.</description>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/housing_PCE_3_acts.pdf</guid>
+    </item>
+
+    <item>
+      <title>DRAM-flation: When Memory Becomes a Macro Variable</title>
+      <link>https://jeffreycleveland.com/PDFcharts/dram_price.pdf</link>
+      <description>A look at memory device prices as a symptom of the ongoing AI datacenter boom.</description>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/dram_price.pdf</guid>
+    </item>
+
+    <item>
+      <title>Seasonally-Adjusted Sunset: Shortest Days vs Earliest Sunset</title>
+      <link>https://jeffreycleveland.com/PDFcharts/LA_sunsets.pdf</link>
+      <description>Settling an annual argument with a friend about whether the shortest day (daylight duration) corresponds with the earliest sunset (sunset time).</description>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/LA_sunsets.pdf</guid>
+    </item>
+
+    <item>
+      <title>Monetary Groupthink: The Cozy Consensus of A Unanimous FOMC Meeting</title>
+      <link>https://jeffreycleveland.com/PDFcharts/FOMC_group_think.pdf</link>
+      <description>I argue that monetary groupthink might be more worrisome than disagreement.</description>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/FOMC_group_think.pdf</guid>
+    </item>
+
+    <item>
+      <title>Infrastructure Overbuild? The British Railway Bubble of the 1840s</title>
+      <link>https://jeffreycleveland.com/PDFcharts/british_railroad_bubble.pdf</link>
+      <description>A depiction of British railway investment as a share of total investment, 1830-1860.</description>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/british_railroad_bubble.pdf</guid>
+    </item>
+
+    <item>
+      <title>California Dreaming? Homebuilding Slumped 20 Years Ago and Never Recovered</title>
+      <link>https://jeffreycleveland.com/PDFcharts/cali_dreamin.pdf</link>
+      <description>Analysis of California's single-family building permits per capita compared to 1990s levels.</description>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/cali_dreamin.pdf</guid>
+    </item>
+
+    <item>
+      <title>Rare Air: A Cluster of Negative Payroll Prints</title>
+      <link>https://jeffreycleveland.com/PDFcharts/rare_air.pdf</link>
+      <description>A look at the rare occurrence of negative jobs reports and how they cluster around economic downturns.</description>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/rare_air.pdf</guid>
+    </item>
+
+    <item>
+      <title>Initial Claims For Unemployment (Layoffs)</title>
+      <link>https://jeffreycleveland.com/PDFcharts/init_claims_April_2025.pdf</link>
+      <description>Analysis of non-seasonally adjusted layoffs data</description>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/init_claims_April_2025.pdf</guid>
+    </item>
+
+    <item>
+      <title>Q1 U.S. Real GDP versus Real PDFP</title>
+      <link>https://jeffreycleveland.com/PDFcharts/PDFP_Q1_2025.pdf</link>
+      <description>Analysis of Q1 U.S. GDP growth</description>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/PDFP_Q1_2025.pdf</guid>
+    </item>
+
+    <item>
+      <title>Single Family Housing Units (2025)</title>
+      <link>https://jeffreycleveland.com/PDFcharts/housing_units_2025.pdf</link>
+      <description>Analysis of the supply of single-family units for sale in the U.S. market.</description>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
+      <guid>https://jeffreycleveland.com/PDFcharts/housing_units_2025.pdf</guid>
+    </item>
+
+  </channel>
+</rss>
