@@ -80,6 +80,10 @@ body {
     padding: 0 20px;
 }
 
+.container-wide {
+    max-width: 850px;
+}
+
 /* Site header */
 .site-header {
     max-width: 650px;
@@ -415,6 +419,11 @@ footer a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.essay-figure a:hover img {
+    opacity: 0.9;
 }
 
 .essay-figure figcaption {
