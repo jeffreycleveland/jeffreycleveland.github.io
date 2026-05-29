@@ -1,0 +1,408 @@
+/* Casa Belvedere — warm Pugliese palette, editorial typography */
+
+:root {
+	--bg:        #f4ede0;
+	--bg-warm:   #ebe2d1;
+	--bg-deep:   #e0d5bf;
+	--ink:       #2d2e22;
+	--ink-soft:  #5a5a48;
+	--ink-muted: #8e8770;
+	--clay:      #8a6a4a;
+	--clay-deep: #6b4f33;
+	--rule:      #c9bfa7;
+
+	--serif: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+	--sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+
+	--gutter: clamp(1.25rem, 4vw, 3rem);
+	--max:    1180px;
+	--narrow:  720px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--sans);
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; display: block; }
+
+a {
+	color: var(--clay-deep);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color .2s ease, color .2s ease;
+}
+a:hover { border-bottom-color: var(--clay); }
+
+/* ---------- Typography ---------- */
+
+h1, h2, h3 {
+	font-family: var(--serif);
+	font-weight: 500;
+	color: var(--ink);
+	letter-spacing: -0.005em;
+	margin: 0 0 0.4em;
+}
+
+h1 {
+	font-size: clamp(3.2rem, 8vw, 5.8rem);
+	line-height: 1;
+	font-weight: 500;
+	letter-spacing: -0.015em;
+}
+
+h2 {
+	font-size: clamp(1.9rem, 4vw, 2.8rem);
+	line-height: 1.15;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 1.35rem;
+	line-height: 1.3;
+	font-weight: 500;
+}
+
+.eyebrow {
+	font-family: var(--sans);
+	font-size: 0.78rem;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--clay);
+	margin: 0 0 1.2rem;
+}
+
+.tagline {
+	font-family: var(--serif);
+	font-style: italic;
+	font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+	color: var(--ink-soft);
+	margin: 0.6rem 0 0;
+	max-width: 32ch;
+}
+
+.lede {
+	font-family: var(--serif);
+	font-size: clamp(1.2rem, 2vw, 1.5rem);
+	line-height: 1.5;
+	color: var(--ink-soft);
+	margin: 0 0 1.6rem;
+}
+
+p { margin: 0 0 1.1rem; }
+em { font-style: italic; }
+
+.footnote {
+	font-size: 0.85rem;
+	color: var(--ink-muted);
+	font-style: italic;
+	margin-top: 1.5rem;
+}
+
+/* ---------- Nav ---------- */
+
+.site-nav {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 1rem var(--gutter);
+	background: rgba(244, 237, 224, 0.92);
+	backdrop-filter: saturate(140%) blur(8px);
+	-webkit-backdrop-filter: saturate(140%) blur(8px);
+	border-bottom: 1px solid var(--rule);
+}
+
+.site-nav .brand {
+	font-family: var(--serif);
+	font-size: 1.25rem;
+	color: var(--ink);
+	border: none;
+}
+
+.site-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.4rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul a {
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--ink-soft);
+	border: none;
+}
+
+.site-nav ul a:hover { color: var(--clay-deep); }
+
+@media (max-width: 760px) {
+	.site-nav ul { display: none; }
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+	min-height: 88vh;
+	display: flex;
+	align-items: flex-end;
+	padding: var(--gutter);
+	padding-bottom: clamp(2rem, 8vh, 6rem);
+	background:
+		linear-gradient(180deg, rgba(45,46,34,0) 50%, rgba(45,46,34,0.55) 100%),
+		linear-gradient(135deg, #c9bfa7 0%, #d9c9a8 40%, #b7a884 100%);
+	color: #f4ede0;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::after {
+	content: "Hero photo or video — placeholder";
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: rgba(244, 237, 224, 0.6);
+}
+
+.hero-inner { max-width: var(--max); width: 100%; }
+
+.hero .eyebrow { color: #f4ede0; opacity: 0.9; }
+.hero h1 { color: #f4ede0; }
+.hero .tagline { color: rgba(244, 237, 224, 0.88); }
+
+/* ---------- Sections ---------- */
+
+.section {
+	padding: clamp(4rem, 9vw, 7rem) var(--gutter);
+}
+
+.section-inner {
+	max-width: var(--max);
+	margin: 0 auto;
+}
+
+.section-inner.narrow { max-width: var(--narrow); }
+.section-inner.center  { text-align: center; }
+.section-inner.center .lede { margin-left: auto; margin-right: auto; }
+
+.narrow {
+	max-width: var(--narrow);
+}
+
+.section.story    { background: var(--bg); }
+.section.house    { background: var(--bg-warm); }
+.section.rooftop  { background: var(--bg); }
+.section.land     { background: var(--bg-warm); }
+.section.puglia   { background: var(--bg); }
+.section.stay     { background: var(--bg-deep); }
+.section.contact  { background: var(--bg-warm); }
+
+/* ---------- Split layouts ---------- */
+
+.split {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: clamp(2rem, 5vw, 4rem);
+	align-items: center;
+	margin-top: 2.5rem;
+}
+
+.split.reverse > :first-child { order: 2; }
+
+@media (max-width: 760px) {
+	.split { grid-template-columns: 1fr; }
+	.split.reverse > :first-child { order: 0; }
+}
+
+/* ---------- Rooms ---------- */
+
+.rooms-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: clamp(1.5rem, 3vw, 2.5rem);
+	margin: 2.5rem 0 0;
+}
+
+@media (max-width: 760px) {
+	.rooms-grid { grid-template-columns: 1fr; }
+}
+
+.room { margin: 0; }
+.room figcaption { padding-top: 1rem; }
+.room figcaption h3 { margin-bottom: 0.3rem; }
+.room figcaption p { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* ---------- Guide list ---------- */
+
+.guide-list {
+	list-style: none;
+	padding: 0;
+	margin: 3rem 0 0;
+	display: grid;
+	gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.guide-list > li {
+	display: grid;
+	grid-template-columns: 280px 1fr;
+	gap: 2rem;
+	align-items: start;
+}
+
+@media (max-width: 760px) {
+	.guide-list > li { grid-template-columns: 1fr; }
+}
+
+.guide-photo { height: 220px; }
+.guide-text h3 { margin-bottom: 0.4rem; }
+.guide-text .place { color: var(--clay-deep); font-style: italic; }
+.guide-text .meta {
+	font-size: 0.78rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ink-muted);
+	margin: 0 0 0.8rem;
+}
+
+.guide-more {
+	display: block !important;
+	border-top: 1px solid var(--rule);
+	padding-top: 1.5rem;
+	font-style: italic;
+	color: var(--ink-soft);
+}
+
+/* ---------- Rates ---------- */
+
+.rates {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 2rem 0 0;
+	font-size: 1.05rem;
+}
+
+.rates th, .rates td {
+	text-align: left;
+	padding: 1rem 0.75rem;
+	border-bottom: 1px solid var(--rule);
+}
+
+.rates th {
+	font-family: var(--sans);
+	font-weight: 500;
+	font-size: 0.78rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--clay);
+}
+
+.rates tbody td:first-child {
+	font-family: var(--serif);
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-links {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+
+.contact-btn {
+	display: inline-block;
+	padding: 0.95rem 1.8rem;
+	background: var(--ink);
+	color: var(--bg);
+	border: 1px solid var(--ink);
+	font-size: 0.85rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.contact-btn:hover { background: var(--clay-deep); border-color: var(--clay-deep); }
+
+.contact-btn.ghost {
+	background: transparent;
+	color: var(--ink);
+}
+.contact-btn.ghost:hover { background: var(--ink); color: var(--bg); }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+	background: #2d2e22;
+	color: #c9bfa7;
+	padding: 3rem var(--gutter);
+	text-align: center;
+}
+
+.footer-inner { max-width: var(--max); margin: 0 auto; }
+
+.site-footer .brand {
+	font-family: var(--serif);
+	font-size: 1.4rem;
+	color: #f4ede0;
+	margin: 0 0 0.4rem;
+}
+
+.site-footer .address {
+	font-size: 0.85rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	margin: 0 0 1.5rem;
+}
+
+.site-footer .fineprint {
+	font-size: 0.78rem;
+	color: #8e8770;
+	margin: 0;
+}
+
+/* ---------- Placeholders (remove when real photos arrive) ---------- */
+
+.placeholder {
+	background:
+		repeating-linear-gradient(135deg,
+			var(--bg-deep) 0,
+			var(--bg-deep) 16px,
+			var(--bg-warm) 16px,
+			var(--bg-warm) 32px);
+	color: var(--ink-muted);
+	font-size: 0.8rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	min-height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem;
+	border: 1px solid var(--rule);
+}
+
+.placeholder.tall { min-height: 420px; }
