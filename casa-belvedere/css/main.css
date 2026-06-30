@@ -212,8 +212,9 @@ em { font-style: italic; }
 
 .section.story    { background: var(--bg); }
 .section.house    { background: var(--bg-warm); }
-.section.rooftop  { background: var(--bg); }
-.section.land     { background: var(--bg-warm); }
+.section.plan     { background: var(--bg); }
+.section.rooftop  { background: var(--bg-warm); }
+.section.land     { background: var(--bg); }
 .section.puglia   { background: var(--bg); }
 .section.stay     { background: var(--bg-deep); }
 .section.contact  { background: var(--bg-warm); }
@@ -381,6 +382,41 @@ em { font-style: italic; }
 	font-size: 0.78rem;
 	color: #8e8770;
 	margin: 0;
+}
+
+/* ---------- Floor plan ---------- */
+
+.lede .lede-en {
+	font-family: var(--sans);
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.95rem;
+	letter-spacing: 0.01em;
+	color: var(--ink-muted);
+	line-height: 1.55;
+}
+
+.planimetria {
+	margin: 3rem auto 0;
+	max-width: 1100px;
+	padding: 1.5rem clamp(0.5rem, 2vw, 2rem);
+	background: var(--bg-warm);
+	border: 1px solid var(--rule);
+}
+
+.plan-svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.planimetria figcaption {
+	margin-top: 1.2rem;
+	text-align: center;
+	font-family: var(--serif);
+	font-style: italic;
+	font-size: 0.95rem;
+	color: var(--ink-muted);
 }
 
 /* ---------- Placeholders (remove when real photos arrive) ---------- */
