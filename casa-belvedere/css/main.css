@@ -384,6 +384,59 @@ em { font-style: italic; }
 	margin: 0;
 }
 
+/* ---------- Comforts grid ---------- */
+
+.eyebrow.center { text-align: center; }
+
+.comforts {
+	margin: clamp(3rem, 6vw, 4.5rem) 0 0;
+	padding-top: clamp(2rem, 4vw, 3rem);
+	border-top: 1px solid var(--rule);
+}
+
+.comforts-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 4vw, 3.5rem);
+	margin-top: 2rem;
+}
+
+@media (max-width: 880px) {
+	.comforts-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+	.comforts-grid { grid-template-columns: 1fr; }
+}
+
+.comforts-grid h4 {
+	font-family: var(--serif);
+	font-style: italic;
+	font-weight: 500;
+	font-size: 1.15rem;
+	color: var(--clay-deep);
+	margin: 0 0 0.6rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--rule);
+}
+
+.comforts-grid ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.92rem;
+	color: var(--ink-soft);
+	line-height: 1.6;
+}
+
+.comforts-grid li {
+	padding: 0.25rem 0;
+}
+
+.comforts-grid li strong {
+	font-weight: 500;
+	color: var(--ink);
+}
+
 /* ---------- Floor plan ---------- */
 
 .lede .lede-en {
