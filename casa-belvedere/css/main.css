@@ -195,9 +195,9 @@ em { font-style: italic; }
 
 .hero-inner { position: relative; z-index: 2; max-width: var(--max); width: 100%; }
 
-.hero .eyebrow { color: #f4ede0; opacity: 0.9; }
-.hero h1 { color: #f4ede0; }
-.hero .tagline { color: rgba(244, 237, 224, 0.88); }
+.hero .eyebrow { color: #f4ede0; opacity: 0.95; text-shadow: 0 1px 12px rgba(30,28,20,0.45); }
+.hero h1 { color: #f4ede0; text-shadow: 0 2px 24px rgba(30,28,20,0.45); }
+.hero .tagline { color: rgba(244, 237, 224, 0.95); text-shadow: 0 1px 14px rgba(30,28,20,0.5); }
 
 /* ---------- Sections ---------- */
 
