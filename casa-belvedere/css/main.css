@@ -571,3 +571,15 @@ em { font-style: italic; }
 }
 
 .placeholder.tall { min-height: 420px; }
+
+/* Real photo tiles — background-image so a missing file shows a calm
+   solid tone rather than a broken-image icon. */
+.photo {
+	background-color: var(--bg-deep);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 280px;
+	border: 1px solid var(--rule);
+}
+.photo.tall { min-height: 480px; }
