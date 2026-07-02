@@ -393,6 +393,18 @@ em { font-style: italic; }
 	margin: 0;
 }
 
+.aside {
+	margin-top: 1.4rem;
+	padding-top: 1.2rem;
+	border-top: 1px solid var(--rule);
+	font-family: var(--serif);
+	font-style: italic;
+	font-size: 1.05rem;
+	color: var(--ink-soft);
+	line-height: 1.6;
+}
+.aside strong { font-style: normal; font-weight: 500; color: var(--clay-deep); }
+
 /* ---------- Newsletter ---------- */
 
 .visually-hidden {
