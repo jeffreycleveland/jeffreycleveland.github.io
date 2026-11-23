@@ -641,3 +641,15 @@ em { font-style: italic; }
 	border: 1px solid var(--rule);
 }
 .photo.tall { min-height: 480px; }
+
+/* Night-arrival photo pair under the plans */
+.night-pair .pair-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+.night-pair .photo { min-height: 440px; }
+@media (max-width: 700px) {
+	.night-pair .pair-grid { grid-template-columns: 1fr; }
+	.night-pair .photo { min-height: 360px; }
+}
