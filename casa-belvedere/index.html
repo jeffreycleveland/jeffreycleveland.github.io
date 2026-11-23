@@ -203,222 +203,323 @@
 			</p>
 
 			<figure class="planimetria">
-				<svg viewBox="0 0 1500 1150" xmlns="http://www.w3.org/2000/svg" class="plan-svg" role="img" aria-label="Aria Adriatica plan: four stepped levels, house, olive courtyard, pool platform, rooftop">
+				<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" class="plan-svg" role="img" aria-label="Property map of Aria Adriatica: gate and code panel, turnaround, driveway, three parking areas, olive grove, cappelletta, pool platform and house, with the dotted arrival route">
   <defs>
     <pattern id="water" patternUnits="userSpaceOnUse" width="42" height="14">
       <path d="M0 7 Q10 0 20 7 T 40 7" stroke="#6f9491" stroke-width="0.9" fill="none" opacity="0.8"/>
     </pattern>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8a6a4a"/>
+    </marker>
   </defs>
 
-  <!-- grove dots -->
-  <g fill="#9aa07a" opacity="0.5">
-    <circle cx="70" cy="230" r="9"/><circle cx="55" cy="380" r="8"/><circle cx="95" cy="560" r="10"/>
-    <circle cx="60" cy="720" r="9"/><circle cx="120" cy="880" r="8"/><circle cx="220" cy="1050" r="9"/>
-    <circle cx="470" cy="1080" r="8"/><circle cx="720" cy="1090" r="9"/><circle cx="1000" cy="1090" r="8"/>
-    <circle cx="1440" cy="150" r="9"/><circle cx="1450" cy="330" r="8"/><circle cx="1460" cy="560" r="10"/>
-    <circle cx="1430" cy="1080" r="9"/>
+  <!-- road along the top -->
+  <rect x="0" y="30" width="1600" height="60" fill="#ddd3bd"/>
+  <text x="80" y="68" font-family="Cormorant Garamond, serif" font-style="italic" font-size="16" fill="#8e8770">strada comunale</text>
+
+  <!-- dry-stone wall boundary -->
+  <rect x="60" y="120" width="1480" height="820" rx="18" fill="none" stroke="#a89272" stroke-width="5" stroke-dasharray="14 7" opacity="0.8"/>
+  <text x="90" y="925" font-family="Inter, sans-serif" font-size="11" fill="#a89272" letter-spacing="0.1em">MURETTO A SECCO &middot; DRY-STONE WALL</text>
+
+  <!-- cappelletta at the corner where the road bends -->
+  <g transform="translate(1450,105)">
+    <path d="M-16 42 L-16 14 L0 -2 L16 14 L16 42 Z" fill="#fbf6ec" stroke="#6b4f33" stroke-width="2.5"/>
+    <line x1="0" y1="-2" x2="0" y2="-16" stroke="#6b4f33" stroke-width="2.5"/>
+    <line x1="-6" y1="-10" x2="6" y2="-10" stroke="#6b4f33" stroke-width="2.5"/>
+    <rect x="-7" y="18" width="14" height="16" fill="#e0d5bf" stroke="#6b4f33" stroke-width="1.2"/>
+    <text x="0" y="68" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#6b4f33">la cappelletta</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#a89272" letter-spacing="0.06em">MADONNA DI BELVEDERE</text>
   </g>
 
-  <!-- subtle approach hint from gate -->
-  <path d="M 1150 200 Q 1180 300 1200 380" stroke="#c9bfa7" stroke-width="18" fill="none" opacity="0.28" stroke-linecap="round"/>
-
-  <!-- rooftop banner -->
+  <!-- gate -->
   <g>
-    <text x="750" y="70" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="15" fill="#8a6a4a" letter-spacing="0.14em">SOPRA &middot; ABOVE &middot; +3</text>
-    <text x="750" y="94" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="23" fill="#6b4f33">Terrazza Panoramica &middot; ~175 m&sup2;</text>
-  </g>
-
-  <!-- ROUNDABOUT near gate -->
-  <g>
-    <circle cx="1150" cy="150" r="46" fill="none" stroke="#a89272" stroke-width="1.2" opacity="0.7"/>
-    <circle cx="1150" cy="150" r="24" fill="none" stroke="#a89272" stroke-width="0.8" opacity="0.5"/>
-    <text x="1150" y="120" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="13" fill="#8a6a4a">Rotonda &middot; front gate</text>
-  </g>
-
-  <!-- REAR parking behind Master 2 -->
-  <g>
-    <g stroke="#a89272" stroke-width="1" fill="none" opacity="0.75">
-      <rect x="90" y="380" width="40" height="66"/><rect x="90" y="452" width="40" height="66"/>
+    <rect x="1008" y="106" width="20" height="28" fill="#c9bfa7" stroke="#6b4f33" stroke-width="2"/>
+    <rect x="1112" y="106" width="20" height="28" fill="#c9bfa7" stroke="#6b4f33" stroke-width="2"/>
+    <path d="M1032 132 Q1070 112 1108 132" fill="none" stroke="#2d2e22" stroke-width="3"/>
+    <g stroke="#2d2e22" stroke-width="1.6">
+      <line x1="1042" y1="128" x2="1042" y2="118"/><line x1="1056" y1="124" x2="1056" y2="114"/>
+      <line x1="1070" y1="122" x2="1070" y2="112"/><line x1="1084" y1="124" x2="1084" y2="114"/>
+      <line x1="1098" y1="128" x2="1098" y2="118"/>
     </g>
-    <text x="110" y="370" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="12" fill="#8a6a4a">Parcheggio</text>
-    <text x="110" y="536" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a89272" letter-spacing="0.05em">REAR &middot; GRAVEL</text>
+    <circle cx="1018" cy="150" r="4" fill="#2d2e22"/>
+    <text x="990" y="162" text-anchor="end" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#3a3f2e">il cancello &middot; the gate</text>
+    <text x="990" y="178" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#a89272" letter-spacing="0.06em">CODE PANEL ON THE LEFT PILLAR</text>
   </g>
 
-  <!-- ================= BEDROOM WING (top) ================= -->
+  <!-- driveway: gate -> roundabout -> down east side -> pool parking; branch to rear parking -->
+  <path d="M1070 135 L1070 215" stroke="#d6c9ae" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M1070 300 Q1090 420 1150 500 Q1185 550 1185 620" stroke="#d6c9ae" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M1025 280 Q780 360 540 350 Q330 345 250 400" stroke="#d6c9ae" stroke-width="22" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- roundabout parking -->
   <g>
-    <rect x="380" y="170" width="740" height="170" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="4"/>
-    <!-- corridor divider -->
-    <line x1="380" y1="300" x2="1120" y2="300" stroke="#8a6a4a" stroke-width="1.2"/>
-    <!-- vertical walls -->
-    <line x1="540" y1="170" x2="540" y2="300" stroke="#8a6a4a" stroke-width="1.5"/>
-    <line x1="610" y1="170" x2="610" y2="300" stroke="#8a6a4a" stroke-width="1.5"/>
-    <line x1="780" y1="170" x2="780" y2="300" stroke="#8a6a4a" stroke-width="1.5"/>
-    <line x1="990" y1="170" x2="990" y2="300" stroke="#8a6a4a" stroke-width="1.5"/>
-
-    <!-- Bedroom 3 exterior door on west wall -->
-    <line x1="380" y1="205" x2="380" y2="255" stroke="#fbf6ec" stroke-width="6"/>
-    <path d="M 380 205 A 44 44 0 0 0 424 249" fill="none" stroke="#8a6a4a" stroke-width="1" opacity="0.5"/>
-    <text x="455" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#8a6a4a" font-style="italic">exterior door &rarr; rear parking</text>
-
-    <!-- labels -->
-    <text x="460" y="228" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="19" fill="#3a3f2e">Camera 3</text>
-    <text x="460" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8e8770">Bedroom 3</text>
-
-    <text x="575" y="232" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="13" fill="#3a3f2e">Bagno</text>
-    <text x="575" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" fill="#8e8770">shared</text>
-
-    <text x="695" y="228" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="19" fill="#3a3f2e">Camera 2</text>
-    <text x="695" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8e8770">Bedroom 2</text>
-
-    <text x="885" y="226" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="19" fill="#3a3f2e">Camera Padronale</text>
-    <text x="885" y="245" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8e8770">Master 1 &middot; nearest pool</text>
-
-    <text x="1055" y="230" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="13" fill="#3a3f2e">Bagno</text>
-    <text x="1055" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#8e8770">ensuite</text>
-
-    <text x="750" y="326" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="12" fill="#8e8770" letter-spacing="0.18em">Disimpegno &middot; corridor</text>
+    <circle cx="1070" cy="258" r="44" fill="none" stroke="#a89272" stroke-width="2"/>
+    <circle cx="1070" cy="258" r="16" fill="#d6c9ae" stroke="#a89272" stroke-width="1.5"/>
+    <text x="1150" y="235" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#6b4f33">la rotonda</text>
+    <text x="1150" y="251" font-family="Inter, sans-serif" font-size="9" fill="#a89272" letter-spacing="0.05em">TURNAROUND &middot; PARKING 1</text>
   </g>
 
-  <!-- ============ MASTER 2 offset block (rear) ============ -->
+  <!-- rear gravel parking (west, behind Master 2) -->
   <g>
-    <rect x="250" y="340" width="180" height="170" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="3.5"/>
-    <line x1="355" y1="340" x2="355" y2="510" stroke="#8a6a4a" stroke-width="1.5"/>
-    <text x="300" y="418" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="16" fill="#3a3f2e">Camera</text>
-    <text x="300" y="437" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="16" fill="#3a3f2e">Padronale</text>
-    <text x="300" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8e8770">Master 2 &middot; rear</text>
-    <text x="392" y="420" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="12" fill="#3a3f2e">Bagno</text>
-    <text x="392" y="436" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" fill="#8e8770">ensuite</text>
-  </g>
-
-  <!-- ================ OLIVE COURTYARD ================ -->
-  <g>
-    <text x="530" y="380" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="18" fill="#6b4f33">Corte dell&rsquo;ulivo</text>
-    <text x="530" y="399" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#a89272" letter-spacing="0.08em">OLIVE COURTYARD</text>
-    <g transform="translate(530,510)">
-      <circle r="52" fill="none" stroke="#7a8a5a" stroke-width="1.3" opacity="0.7"/>
-      <circle r="38" fill="none" stroke="#7a8a5a" stroke-width="1" opacity="0.55"/>
-      <circle r="22" fill="none" stroke="#7a8a5a" stroke-width="0.8" opacity="0.4"/>
-      <path d="M-4,38 L0,0 L4,38 Z" fill="#8a6a4a"/>
-      <ellipse cx="-28" cy="-8" rx="8" ry="3" fill="none" stroke="#7a8a5a" stroke-width="1" transform="rotate(-25 -28 -8)"/>
-      <ellipse cx="26" cy="-16" rx="8" ry="3" fill="none" stroke="#7a8a5a" stroke-width="1" transform="rotate(40 26 -16)"/>
-      <ellipse cx="-16" cy="-32" rx="7" ry="2.6" fill="none" stroke="#7a8a5a" stroke-width="1"/>
-      <ellipse cx="16" cy="-34" rx="7" ry="2.6" fill="none" stroke="#7a8a5a" stroke-width="1" transform="rotate(20 16 -34)"/>
+    <g stroke="#a89272" stroke-width="1.4" fill="none">
+      <rect x="180" y="408" width="34" height="56"/><rect x="222" y="408" width="34" height="56"/><rect x="264" y="408" width="34" height="56"/>
     </g>
-    <text x="530" y="592" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="10" fill="#8e8770">ulivo secolare</text>
+    <text x="238" y="396" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#6b4f33">ghiaia sul retro</text>
+    <text x="238" y="486" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#a89272" letter-spacing="0.05em">REAR GRAVEL &middot; PARKING 2</text>
   </g>
 
-  <!-- ================ KITCHEN + PANTRY (bridges corridor to living) ================ -->
+  <!-- pool-stairs parking (east) -->
   <g>
-    <rect x="650" y="340" width="270" height="140" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="3.5"/>
-    <line x1="820" y1="340" x2="820" y2="480" stroke="#8a6a4a" stroke-width="1.3"/>
-    <text x="735" y="405" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="18" fill="#3a3f2e">Cucina</text>
-    <text x="735" y="423" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8e8770">Kitchen &middot; island</text>
-    <text x="735" y="439" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" fill="#a89272" font-style="italic">microplaster</text>
-    <g transform="rotate(-90 870 415)">
-      <text x="870" y="410" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="12" fill="#3a3f2e">Dispensa</text>
-      <text x="870" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#8e8770">pantry &middot; wine &middot; espresso</text>
+    <g stroke="#a89272" stroke-width="1.4" fill="none">
+      <rect x="1160" y="640" width="34" height="56"/><rect x="1202" y="640" width="34" height="56"/>
+    </g>
+    <text x="1198" y="628" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#6b4f33">sotto la piscina</text>
+    <text x="1198" y="718" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#a89272" letter-spacing="0.05em">BY THE POOL STAIRS &middot; PARKING 3</text>
+  </g>
+
+  <!-- the house: simple L footprint -->
+  <g>
+    <path d="M380 470 L820 470 L820 560 L640 560 L640 700 L380 700 Z"
+          fill="#fbf6ec" stroke="#2d2e22" stroke-width="4" transform="translate(0,-40)"/>
+    <text x="510" y="520" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="24" fill="#3a3f2e">la casa</text>
+    <text x="510" y="543" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">4 camere &middot; 3 bagni &middot; un piano</text>
+    <text x="510" y="562" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#a89272" font-style="italic">terrazza sopra &middot; rooftop above (+3)</text>
+    <!-- front door marker on east face of living wing -->
+    <circle cx="820" cy="498" r="6" fill="#8a6a4a" transform="translate(0,-40)"/>
+    <text x="808" y="420" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#8a6a4a" font-style="italic">la porta scorrevole &middot; the sliding door</text>
+  </g>
+
+  <!-- veranda strip on the east face -->
+  <g>
+    <rect x="820" y="430" width="70" height="130" fill="#f4ede0" stroke="#2d2e22" stroke-width="2.5"/>
+    <circle cx="884" cy="440" r="4" fill="#2d2e22"/><circle cx="884" cy="550" r="4" fill="#2d2e22"/>
+    <g transform="rotate(-90 855 495)">
+      <text x="855" y="499" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#3a3f2e">veranda</text>
     </g>
   </g>
 
-  <!-- ================ LIVING / DINING ================ -->
+  <!-- stairs veranda <-> pool platform -->
+  <g transform="translate(900,470)">
+    <g stroke="#6b4f33" stroke-width="1.3" fill="none">
+      <rect x="0" y="0" width="34" height="56"/>
+      <line x1="11" y1="0" x2="11" y2="56"/><line x1="22" y1="0" x2="22" y2="56"/>
+    </g>
+    <text x="17" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8a6a4a" font-style="italic">+2 &rarr; +1</text>
+  </g>
+
+  <!-- pool platform -->
   <g>
-    <rect x="650" y="480" width="400" height="280" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="4"/>
-    <text x="850" y="606" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="28" fill="#3a3f2e">Soggiorno &middot; Pranzo</text>
-    <text x="850" y="634" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#8e8770">Living &amp; Dining &middot; ~48 m&sup2; &middot; +2</text>
-    <text x="850" y="656" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#a89272" font-style="italic">panoramic window &middot; sliding glass to veranda</text>
-  </g>
-
-  <!-- ================ VERANDA ================ -->
-  <g>
-    <rect x="1050" y="520" width="210" height="240" fill="#f4ede0" stroke="#8a6a4a" stroke-width="3"/>
-    <circle cx="1070" cy="540" r="5" fill="#8a6a4a"/><circle cx="1070" cy="740" r="5" fill="#8a6a4a"/>
-    <circle cx="1240" cy="540" r="5" fill="#8a6a4a"/><circle cx="1240" cy="740" r="5" fill="#8a6a4a"/>
-    <text x="1155" y="632" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="20" fill="#3a3f2e">Veranda</text>
-    <text x="1155" y="654" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8e8770">covered dining &middot; +2</text>
-  </g>
-
-  <!-- rooftop stairs off veranda (up) -->
-  <g transform="translate(1058,766)">
-    <g stroke="#8a6a4a" stroke-width="1" fill="none">
-      <rect x="0" y="0" width="86" height="42" stroke-width="1.8"/>
-      <line x1="0" y1="14" x2="86" y2="14"/><line x1="0" y1="28" x2="86" y2="28"/>
+    <rect x="944" y="420" width="240" height="180" fill="#efe7d4" stroke="#6b4f33" stroke-width="2.5"/>
+    <rect x="968" y="448" width="150" height="120" fill="url(#water)" stroke="#5a7370" stroke-width="2"/>
+    <text x="1043" y="515" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="16" fill="#44605d">la piscina (+1)</text>
+    <g fill="#8a9a5a" opacity="0.65">
+      <circle cx="956" cy="436" r="5"/><circle cx="956" cy="486" r="5"/><circle cx="956" cy="536" r="5"/><circle cx="956" cy="586" r="5"/>
+      <circle cx="1130" cy="436" r="5"/><circle cx="1172" cy="470" r="5"/>
     </g>
-    <path d="M 43 -8 L 43 -28 M 35 -20 L 43 -28 L 51 -20" stroke="#8a6a4a" stroke-width="1.4" fill="none"/>
-    <text x="43" y="-34" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="11" fill="#8a6a4a">&uarr; stairs to rooftop (+3)</text>
+    <!-- shower NE corner -->
+    <rect x="1146" y="428" width="26" height="26" fill="#fbf6ec" stroke="#6b4f33" stroke-width="1.4"/>
+    <circle cx="1159" cy="441" r="4" fill="none" stroke="#6f9491" stroke-width="1"/>
   </g>
 
-  <!-- stairs veranda -> pool (down one level) -->
-  <g transform="translate(1262,590)">
-    <g stroke="#8a6a4a" stroke-width="1" fill="none">
-      <rect x="0" y="0" width="36" height="80" stroke-width="1.6"/>
-      <line x1="12" y1="0" x2="12" y2="80"/><line x1="24" y1="0" x2="24" y2="80"/>
+  <!-- stairs ground -> pool platform (east side, by parking 3) -->
+  <g transform="translate(1184,500)">
+    <g stroke="#6b4f33" stroke-width="1.3" fill="none">
+      <rect x="0" y="0" width="26" height="44"/>
+      <line x1="0" y1="11" x2="26" y2="11"/><line x1="0" y1="22" x2="26" y2="22"/><line x1="0" y1="33" x2="26" y2="33"/>
     </g>
-    <text x="18" y="-8" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#8a6a4a" font-style="italic">&darr;</text>
+    <text x="34" y="26" font-family="Inter, sans-serif" font-size="9" fill="#8a6a4a" font-style="italic">0 &rarr; +1</text>
   </g>
 
-  <!-- ================ POOL PLATFORM + POOL ================ -->
-  <g>
-    <rect x="1300" y="470" width="180" height="400" fill="#efe7d4" stroke="#8a6a4a" stroke-width="2.5"/>
-    <text x="1390" y="492" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="10" fill="#8e8770" letter-spacing="0.08em">PIATTAFORMA &middot; +1</text>
-    <rect x="1330" y="512" width="120" height="320" fill="url(#water)" stroke="#5a7370" stroke-width="2"/>
-    <g stroke="#5a7370" stroke-width="0.7" fill="none" opacity="0.8">
-      <line x1="1330" y1="524" x2="1356" y2="524"/><line x1="1330" y1="533" x2="1356" y2="533"/><line x1="1330" y1="542" x2="1356" y2="542"/>
+  <!-- rooftop stairs marker, just off veranda (south end) -->
+  <g transform="translate(846,578)">
+    <g stroke="#6b4f33" stroke-width="1.2" fill="none">
+      <rect x="0" y="0" width="44" height="22"/>
+      <line x1="11" y1="0" x2="11" y2="22"/><line x1="22" y1="0" x2="22" y2="22"/><line x1="33" y1="0" x2="33" y2="22"/>
     </g>
-    <text x="1390" y="676" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="20" fill="#3a3f2e">Piscina</text>
-    <text x="1390" y="698" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8e8770">salt-water &middot; ~58 m&sup2;</text>
-    <!-- planters -->
-    <g fill="#8a9a5a" opacity="0.6">
-      <circle cx="1315" cy="500" r="6"/><circle cx="1315" cy="560" r="6"/><circle cx="1315" cy="640" r="6"/><circle cx="1315" cy="720" r="6"/><circle cx="1315" cy="800" r="6"/>
-      <circle cx="1465" cy="500" r="6"/><circle cx="1465" cy="560" r="6"/><circle cx="1465" cy="640" r="6"/><circle cx="1465" cy="720" r="6"/><circle cx="1465" cy="800" r="6"/>
-    </g>
-    <!-- outdoor shower SE corner -->
-    <rect x="1440" y="838" width="34" height="30" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="1.5"/>
-    <circle cx="1457" cy="853" r="5" fill="none" stroke="#6f9491" stroke-width="1"/>
-    <text x="1457" y="884" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="10" fill="#3a3f2e">Doccia</text>
+    <text x="22" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8a6a4a" font-style="italic">&uarr; alla terrazza (+3)</text>
   </g>
 
-  <!-- ground -> pool stairs (up, from parking) -->
-  <g transform="translate(1330,872)">
-    <g stroke="#8a6a4a" stroke-width="1" fill="none">
-      <rect x="0" y="0" width="90" height="34" stroke-width="1.6"/>
-      <line x1="0" y1="11" x2="90" y2="11"/><line x1="0" y1="22" x2="90" y2="22"/>
-    </g>
-    <path d="M 45 46 L 45 66 M 37 58 L 45 66 L 53 58" stroke="#8a6a4a" stroke-width="1.4" fill="none"/>
-    <text x="45" y="84" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="10" fill="#8a6a4a">&uarr; up from parking (0)</text>
-  </g>
+  <!-- arrival route: dotted clay line -->
+  <path d="M1072 145 L1072 212"
+        stroke="#8a6a4a" stroke-width="2.2" stroke-dasharray="2 7" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1074 300 Q1094 420 1152 498 Q1186 548 1186 612"
+        stroke="#8a6a4a" stroke-width="2.2" stroke-dasharray="2 7" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1197 494 Q1180 560 1080 578 L968 578 Q938 574 922 532"
+        stroke="#8a6a4a" stroke-width="2.2" stroke-dasharray="2 7" fill="none"/>
+  <path d="M916 464 Q874 446 836 458"
+        stroke="#8a6a4a" stroke-width="2.2" stroke-dasharray="2 7" fill="none" marker-end="url(#arrow)"/>
+  <text x="1250" y="476" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#8a6a4a">il tuo arrivo &middot; your way in</text>
 
-  <!-- pool-adjacent parking -->
-  <g>
-    <g stroke="#a89272" stroke-width="1" fill="none" opacity="0.75">
-      <rect x="1350" y="960" width="40" height="64"/><rect x="1398" y="960" width="40" height="64"/>
-    </g>
-    <text x="1394" y="1044" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a89272" letter-spacing="0.05em">PARKING &middot; POOL STAIRS</text>
+  <!-- olive grove dots -->
+  <g fill="#9aa07a" opacity="0.55">
+    <circle cx="160" cy="200" r="11"/><circle cx="260" cy="170" r="9"/><circle cx="370" cy="215" r="10"/><circle cx="480" cy="165" r="9"/>
+    <circle cx="590" cy="210" r="11"/><circle cx="700" cy="170" r="9"/><circle cx="810" cy="215" r="10"/><circle cx="130" cy="310" r="9"/>
+    <circle cx="250" cy="290" r="10"/><circle cx="380" cy="330" r="9"/><circle cx="520" cy="290" r="10"/><circle cx="660" cy="320" r="9"/>
+    <circle cx="790" cy="300" r="10"/><circle cx="135" cy="590" r="10"/><circle cx="130" cy="700" r="9"/>
+    <circle cx="200" cy="790" r="10"/><circle cx="320" cy="830" r="9"/><circle cx="440" cy="790" r="11"/><circle cx="560" cy="840" r="9"/>
+    <circle cx="680" cy="790" r="10"/><circle cx="800" cy="845" r="9"/><circle cx="920" cy="795" r="10"/><circle cx="1040" cy="845" r="9"/>
+    <circle cx="1160" cy="800" r="10"/><circle cx="1280" cy="845" r="9"/><circle cx="1390" cy="790" r="10"/><circle cx="1440" cy="650" r="9"/>
+    <circle cx="1420" cy="500" r="10"/><circle cx="1440" cy="350" r="9"/><circle cx="1380" cy="230" r="10"/>
   </g>
+  <text x="300" y="875" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#6b7a4f">l&rsquo;uliveto &middot; 8.300 m&sup2; of old olives</text>
 
-  <!-- sea arrow -->
+  <!-- compass + disclaimers + sea -->
+  <g transform="translate(140,160)">
+    <circle r="22" fill="#fbf6ec" stroke="#6b4f33" stroke-width="1.2"/>
+    <path d="M0,-14 L4,8 L0,4 L-4,8 Z" fill="#6b4f33"/>
+    <text y="-28" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#5a5a48">N</text>
+  </g>
+  <text x="1530" y="965" text-anchor="end" font-family="Inter, sans-serif" font-size="10" fill="#a89272" font-style="italic">schematic &mdash; not to scale</text>
   <g opacity="0.85">
-    <path d="M 1300 950 L 1410 950 M 1396 940 L 1410 950 L 1396 960" stroke="#8a6a4a" stroke-width="1.2" fill="none"/>
-    <text x="1300" y="936" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="12" fill="#8a6a4a">verso l&rsquo;Adriatico &middot; sea</text>
-  </g>
-
-  <!-- compass -->
-  <g transform="translate(120,140)">
-    <circle r="24" fill="#fbf6ec" stroke="#8a6a4a" stroke-width="1"/>
-    <path d="M0,-15 L4.5,9 L0,4 L-4.5,9 Z" fill="#8a6a4a"/>
-    <text y="-30" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#5a5a48">N</text>
-  </g>
-
-  <!-- scale bar -->
-  <g transform="translate(120,1080)">
-    <line x1="0" y1="0" x2="200" y2="0" stroke="#5a5a48" stroke-width="1.4"/>
-    <line x1="0" y1="-5" x2="0" y2="5" stroke="#5a5a48" stroke-width="1.4"/>
-    <line x1="100" y1="-4" x2="100" y2="4" stroke="#5a5a48" stroke-width="1"/>
-    <line x1="200" y1="-5" x2="200" y2="5" stroke="#5a5a48" stroke-width="1.4"/>
-    <text x="0" y="20" font-family="Inter,sans-serif" font-size="9" fill="#5a5a48">0</text>
-    <text x="200" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5a5a48">5 m</text>
+    <path d="M1470 760 L1530 760" stroke="#6f9491" stroke-width="1.6" marker-end="url(#arrow)"/>
+    <text x="1500" y="748" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="13" fill="#5a7370">il mare</text>
   </g>
 </svg>
-				<figcaption>Aria Adriatica on four stepped levels &mdash; ground / pool platform / house / rooftop terrace. Schematic, not to surveyor scale. Master 1 sits nearest the pool and Master 2 at the back near the rear parking. The corridor opens onto the internal olive courtyard.</figcaption>
+				<figcaption>La Propriet&agrave; &mdash; the gate and its code panel, the rotonda, three places to park, and the dotted line of your arrival: up the pool stairs, across the platform, through the sliding door. Schematic, not to surveyor scale.</figcaption>
+			</figure>
+
+			<figure class="planimetria">
+				<svg viewBox="0 0 1600 780" xmlns="http://www.w3.org/2000/svg" class="plan-svg" role="img" aria-label="Floor plan: bedroom wing with two masters, two bedrooms and shared bath along a corridor, olive courtyard, kitchen with dispensa, living room and veranda, all on one floor">
+  <!-- rooftop banner -->
+  <g>
+    <rect x="240" y="48" width="1040" height="34" rx="17" fill="none" stroke="#a89272" stroke-width="1.4" stroke-dasharray="6 5"/>
+    <text x="760" y="70" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#8e8770">sopra &middot; la terrazza panoramica copre quasi tutta la casa &middot; the rooftop runs the length of the house</text>
+  </g>
+
+  <!-- ══ bedroom wing ══ -->
+  <g stroke="#2d2e22" stroke-width="3.5" fill="#fbf6ec">
+    <rect x="240" y="120" width="940" height="210"/>
+  </g>
+  <!-- internal partitions -->
+  <g stroke="#2d2e22" stroke-width="2">
+    <line x1="440" y1="120" x2="440" y2="270"/>
+    <line x1="540" y1="120" x2="540" y2="270"/>
+    <line x1="740" y1="120" x2="740" y2="270"/>
+    <line x1="1010" y1="120" x2="1010" y2="270"/>
+    <line x1="240" y1="270" x2="1180" y2="270"/>
+  </g>
+
+  <!-- Bedroom 3 -->
+  <text x="340" y="185" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#3a3f2e">camera 3</text>
+  <text x="340" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">bedroom 3</text>
+  <!-- its exterior door, top wall, near parking -->
+  <line x1="280" y1="120" x2="316" y2="120" stroke="#fbf6ec" stroke-width="5"/>
+  <path d="M280 120 A36 36 0 0 1 316 84" fill="none" stroke="#8a6a4a" stroke-width="1.5"/>
+  <text x="298" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8a6a4a" font-style="italic">porta esterna &middot; by the parking</text>
+
+  <!-- shared bath -->
+  <rect x="440" y="120" width="100" height="150" fill="#efe7d4" stroke="none"/>
+  <line x1="440" y1="120" x2="440" y2="270" stroke="#2d2e22" stroke-width="2"/>
+  <line x1="540" y1="120" x2="540" y2="270" stroke="#2d2e22" stroke-width="2"/>
+  <g transform="rotate(-90 490 195)">
+    <text x="490" y="192" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#3a3f2e">bagno</text>
+    <text x="490" y="208" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#8e8770">shared bath</text>
+  </g>
+
+  <!-- Bedroom 2 -->
+  <text x="640" y="185" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#3a3f2e">camera 2</text>
+  <text x="640" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">bedroom 2</text>
+
+  <!-- Master 1 -->
+  <text x="875" y="185" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#3a3f2e">master 1</text>
+  <text x="875" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">king &middot; nearest the pool</text>
+
+  <!-- Master 1 ensuite -->
+  <rect x="1010" y="120" width="170" height="150" fill="#efe7d4" stroke="none"/>
+  <line x1="1010" y1="120" x2="1010" y2="270" stroke="#2d2e22" stroke-width="2"/>
+  <text x="1095" y="185" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="17" fill="#3a3f2e">bagno</text>
+  <text x="1095" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#8e8770">en suite</text>
+
+  <!-- corridor -->
+  <text x="710" y="305" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="15" fill="#8e8770" letter-spacing="0.08em">il corridoio</text>
+
+  <!-- ══ Master 2 offset block (rear/west) ══ -->
+  <g stroke="#2d2e22" stroke-width="3.5" fill="#fbf6ec">
+    <rect x="130" y="330" width="260" height="220"/>
+  </g>
+  <line x1="300" y1="330" x2="300" y2="550" stroke="#2d2e22" stroke-width="2"/>
+  <rect x="300" y="332" width="88" height="216" fill="#efe7d4"/>
+  <line x1="300" y1="330" x2="300" y2="550" stroke="#2d2e22" stroke-width="2"/>
+  <text x="215" y="430" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#3a3f2e">master 2</text>
+  <text x="215" y="452" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">king &middot; the quiet end</text>
+  <g transform="rotate(-90 344 440)">
+    <text x="344" y="437" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="16" fill="#3a3f2e">bagno</text>
+    <text x="344" y="453" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8e8770">en suite</text>
+  </g>
+
+  <!-- ══ courtyard ══ -->
+  <g>
+    <g fill="#9aa07a" opacity="0.5">
+      <circle cx="590" cy="450" r="34"/>
+      <circle cx="565" cy="432" r="22"/>
+      <circle cx="616" cy="434" r="20"/>
+      <circle cx="590" cy="420" r="18"/>
+    </g>
+    <line x1="590" y1="482" x2="590" y2="508" stroke="#6b4f33" stroke-width="4"/>
+    <text x="590" y="545" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="18" fill="#6b7a4f">la corte con l&rsquo;ulivo</text>
+    <text x="590" y="565" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8e8770">the olive courtyard</text>
+  </g>
+
+  <!-- ══ living wing (attached below the corridor's east end) ══ -->
+  <g stroke="#2d2e22" stroke-width="3.5" fill="#fbf6ec">
+    <rect x="840" y="330" width="440" height="350"/>
+  </g>
+  <!-- kitchen / dispensa / soggiorno partitions -->
+  <g stroke="#2d2e22" stroke-width="2">
+    <line x1="840" y1="500" x2="1280" y2="500"/>
+    <line x1="1150" y1="330" x2="1150" y2="500"/>
+  </g>
+
+  <!-- kitchen -->
+  <text x="990" y="425" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="21" fill="#3a3f2e">la cucina</text>
+  <text x="990" y="447" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#8e8770">island &middot; high-top seats</text>
+
+  <!-- dispensa -->
+  <rect x="1152" y="332" width="126" height="166" fill="#efe7d4"/>
+  <line x1="1150" y1="330" x2="1150" y2="500" stroke="#2d2e22" stroke-width="2"/>
+  <text x="1215" y="425" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="16" fill="#3a3f2e">dispensa</text>
+  <text x="1215" y="444" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8e8770">wine &middot; espresso</text>
+
+  <!-- soggiorno -->
+  <text x="1060" y="585" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="22" fill="#3a3f2e">il soggiorno</text>
+  <text x="1060" y="607" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e8770">living &middot; dining</text>
+  <!-- sliding door on east wall of soggiorno -->
+  <line x1="1280" y1="540" x2="1280" y2="640" stroke="#fbf6ec" stroke-width="6"/>
+  <g stroke="#8a6a4a" stroke-width="2.5">
+    <line x1="1280" y1="540" x2="1280" y2="588"/>
+    <line x1="1287" y1="592" x2="1287" y2="640"/>
+  </g>
+
+  <!-- ══ veranda, east ══ -->
+  <rect x="1292" y="500" width="150" height="180" fill="#f4ede0" stroke="#2d2e22" stroke-width="2.5"/>
+  <circle cx="1432" cy="512" r="5" fill="#2d2e22"/>
+  <circle cx="1432" cy="590" r="5" fill="#2d2e22"/>
+  <circle cx="1432" cy="668" r="5" fill="#2d2e22"/>
+  <text x="1360" y="585" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="19" fill="#3a3f2e">la veranda</text>
+  <text x="1360" y="606" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8e8770">long table &middot; shade</text>
+  <!-- the way in -->
+  <text x="1366" y="488" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8a6a4a" font-style="italic">&larr; si entra da qui &middot; you arrive here</text>
+  <!-- down to pool -->
+  <g transform="translate(1452,540)">
+    <g stroke="#6b4f33" stroke-width="1.3" fill="none">
+      <rect x="0" y="0" width="30" height="52"/>
+      <line x1="0" y1="13" x2="30" y2="13"/><line x1="0" y1="26" x2="30" y2="26"/><line x1="0" y1="39" x2="30" y2="39"/>
+    </g>
+  </g>
+  <text x="1467" y="618" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#8a6a4a" font-style="italic">&darr; piscina</text>
+  <!-- rooftop stairs just off the veranda -->
+  <g transform="translate(1310,692)">
+    <g stroke="#6b4f33" stroke-width="1.3" fill="none">
+      <rect x="0" y="0" width="52" height="26"/>
+      <line x1="13" y1="0" x2="13" y2="26"/><line x1="26" y1="0" x2="26" y2="26"/><line x1="39" y1="0" x2="39" y2="26"/>
+    </g>
+    <text x="110" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#8a6a4a" font-style="italic">&uarr; alla terrazza</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="1540" y="755" text-anchor="end" font-family="Inter, sans-serif" font-size="10" fill="#a89272" font-style="italic">schematic &mdash; not to scale &middot; tutto su un piano &middot; all on one floor</text>
+</svg>
+				<figcaption>La Pianta &mdash; everything on one floor. Master 1 nearest the pool, Master 2 at the quiet end by the rear parking, two bedrooms sharing a bath between them, and the rooftop terrace running the length of the house above.</figcaption>
 			</figure>
 		</div>
 	</section>
